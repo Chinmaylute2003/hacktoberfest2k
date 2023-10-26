@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color flipper</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #navbar {
+        width: 100%;
+        height: 100px;
+        display: flex;
+      }
+      .title {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .simple,
+      .hex {
+        display: flex;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+      }
+      .hex h1{
+        color: blue ;
+      }
+      a {
+        text-decoration: none;
+        color: red;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        height:115px;
+      }
+      .container h1{
+        border: 2px solid black;
+        padding: 20px 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px #888888;
+
+      }
+      .button-area{
+        text-align: center;
+        margin: 20px 0;
+      }
+      #btn{
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 5px 5px #888888;
+
+      }
+     
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="title">
+        <h1>Color flipper</h1>
+      </div>
+      <div class="simple">
+        <a href="index.html"><h1>Simple</h1></a>
+      </div>
+      <div class="hex">
+        <a href="hex.html"><h1>Hex</h1></a>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Background-color: <span id="color">#ffffff</span></h1>
+    </div>
+    <div class="button-area">
+      <button id="btn">CLICK HERE</button>
+    </div>
+  </body>
+  <script src="hex.js"></script>
+</html>
